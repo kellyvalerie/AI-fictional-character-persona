@@ -1,2 +1,2 @@
-# special-system
-Creating a Chatbot where user can ask a question and using a RAG, it able to answer the query
+# AI Fictional Character Persona
+Input your favorite fictional character, and chat with them like friends!
