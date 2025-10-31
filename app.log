@@ -1,0 +1,122 @@
+2025-10-27 15:31:53,936 - INFO - Extracted entities and relationships:
+2025-10-27 15:31:53,937 - INFO -   ENTITY1: John, ENTITY2: Mary, RELATIONSHIP: interacted
+2025-10-27 15:31:53,938 - INFO - Extracted entity dialogues:
+2025-10-27 15:31:53,940 - INFO -   SPEAKER: Mary, DIALOGUE: "Hello, John," said Mary.
+2025-10-27 15:31:53,940 - INFO -   SPEAKER: John, DIALOGUE: "How are you today?"
+John replied, "I'm fine, thank you!"
+
+2025-10-27 15:31:53,968 - INFO - Stored entities and relationships in database
+2025-10-27 15:31:53,990 - INFO - Stored entity dialogues in database
+2025-10-27 15:31:53,990 - INFO - preprocess_book() finished
+2025-10-27 15:31:53,990 - INFO - main() exit
+2025-10-27 15:31:53,995 - INFO - main() exit
+2025-10-27 22:40:09,915 - INFO - Extracted entities and relationships:
+2025-10-27 22:40:09,918 - INFO -   ENTITY1: John, ENTITY2: Mary, RELATIONSHIP: interacted
+2025-10-27 22:41:47,379 - INFO - Extracted entities and relationships:
+2025-10-27 22:41:47,379 - INFO -   ENTITY1: John, ENTITY2: Mary, RELATIONSHIP: interacted
+2025-10-27 22:47:17,403 - INFO - Extracted entities and relationships:
+2025-10-27 22:47:17,404 - INFO -   ENTITY1: John, ENTITY2: Mary, RELATIONSHIP: interacted
+2025-10-27 23:09:14,013 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-10-27 23:09:14,020 - INFO - Extracted entities and relationships:
+2025-10-27 23:09:14,021 - INFO - ENTITY1: John, ENTITY2: Mary, RELATIONSHIP: interacted
+2025-10-27 23:09:44,068 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-10-27 23:09:44,089 - INFO - Extracted entity dialogues:
+2025-10-27 23:09:44,089 - INFO - SPEAKER: Mary, DIALOGUE: Hello, John,
+2025-10-27 23:09:44,089 - INFO - SPEAKER: John, DIALOGUE: How are you today?
+2025-10-27 23:09:44,159 - INFO - Stored entities and relationships in database
+2025-10-27 23:09:44,164 - INFO - Wrote entities_relationships.json
+2025-10-27 23:09:44,192 - INFO - Stored entity dialogues in database
+2025-10-27 23:09:44,193 - INFO - Wrote entity_dialogues.json
+2025-10-27 23:09:44,193 - INFO - preprocess_book() finished
+2025-10-27 23:09:44,193 - INFO - main() exit
+2025-10-27 23:09:44,194 - INFO - main() exit
+2025-11-01 02:09:21,576 - WARNING - Ollama call failed: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
+2025-11-01 02:09:21,579 - INFO - Extracted entities and relationships:
+2025-11-01 02:09:21,579 - INFO - ENTITY1: Peter, ENTITY2: Gamora, RELATIONSHIP: interacted
+2025-11-01 02:09:21,586 - WARNING - Ollama call failed: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
+2025-11-01 02:09:21,589 - INFO - Extracted entity dialogues:
+2025-11-01 02:09:21,589 - INFO - SPEAKER: Peter, DIALOGUE: s determined stance, Gamora
+2025-11-01 02:09:21,617 - INFO - Stored entities and relationships in database
+2025-11-01 02:09:21,618 - INFO - Wrote entities_relationships.json
+2025-11-01 02:09:21,631 - INFO - Stored entity dialogues in database
+2025-11-01 02:09:21,632 - INFO - Wrote entity_dialogues.json
+2025-11-01 02:09:21,633 - INFO - preprocess_book() finished
+2025-11-01 02:09:21,633 - INFO - main() exit
+2025-11-01 02:09:21,638 - INFO - main() exit
+2025-11-01 02:56:53,674 - INFO - Cleaned and recreated working directory: ./source_data/
+2025-11-01 02:57:25,016 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-11-01 02:57:25,040 - INFO - Extracted entities and relationships:
+2025-11-01 02:57:25,040 - INFO - ENTITY1: Drax, ENTITY2: Destroyer, RELATIONSHIP: interacted
+2025-11-01 02:57:25,040 - INFO - ENTITY1: Peter, ENTITY2: Gamora, RELATIONSHIP: interacted
+2025-11-01 02:57:25,041 - INFO - ENTITY1: Drax, ENTITY2: Nova Corps, RELATIONSHIP: interacted
+2025-11-01 02:57:25,041 - INFO - ENTITY1: Peter, ENTITY2: Gamora, RELATIONSHIP: interacted
+2025-11-01 02:57:25,041 - INFO - ENTITY1: Drax, ENTITY2: Nova Corps, RELATIONSHIP: interacted
+2025-11-01 02:57:55,123 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-11-01 02:57:55,207 - INFO - Extracted entity dialogues:
+2025-11-01 02:57:55,207 - INFO - SPEAKER: Gamora, DIALOGUE: Remember the plan,
+2025-11-01 02:57:55,207 - INFO - SPEAKER: Gamora, DIALOGUE: "We get in, grab the orb, and get out.
+2025-11-01 02:57:55,207 - INFO - SPEAKER: Star, DIALOGUE: "But that doesn't mean I have to like taking orders from Mr. Star-Prince over here.
+2025-11-01 02:57:55,208 - INFO - SPEAKER: Peter, DIALOGUE: "
+
+Peter turned to face them, his trademark smirk visible even through his helmet.
+2025-11-01 02:57:55,208 - INFO - SPEAKER: Peter, DIALOGUE: "First of all, it's Star-Lord.
+2025-11-01 02:57:55,208 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora stepped between them, her voice tense.
+2025-11-01 02:57:55,209 - INFO - SPEAKER: Gamora, DIALOGUE: "Both of you, stop.
+2025-11-01 02:57:55,209 - INFO - SPEAKER: Drax, DIALOGUE: "
+
+Drax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon.
+2025-11-01 02:57:55,210 - INFO - SPEAKER: Drax, DIALOGUE: "I do not understand why we must sneak like cowards.
+2025-11-01 02:57:55,210 - INFO - SPEAKER: Peter, DIALOGUE: We've got a walking tree who only says three words, a destroyer who wants to fight everything, a green assassin who's too serious, and a human who thinks he's the boss of me.
+2025-11-01 02:57:55,211 - INFO - SPEAKER: Peter, DIALOGUE: "You know what?
+2025-11-01 02:57:55,211 - INFO - SPEAKER: Drax, DIALOGUE: I make no promises,
+2025-11-01 02:57:55,211 - INFO - SPEAKER: Peter, DIALOGUE: s supposed to be the most dangerous woman in the galaxy, you
+2025-11-01 02:57:55,212 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora kept her eyes forward.
+2025-11-01 02:57:55,212 - INFO - SPEAKER: Gamora, DIALOGUE: "Don't get sentimental, Quill.
+2025-11-01 02:57:55,212 - INFO - SPEAKER: Peter, DIALOGUE: Hey, I'm just saying—
+2025-11-01 02:57:55,213 - INFO - SPEAKER: Peter, DIALOGUE: Rocket's voice crackled over their comms.
+2025-11-01 02:57:55,213 - INFO - SPEAKER: Gamora, DIALOGUE: "I told you this would happen.
+2025-11-01 02:57:55,213 - INFO - SPEAKER: Peter, DIALOGUE: "
+
+Peter readied his element guns.
+2025-11-01 02:57:55,214 - INFO - SPEAKER: Drax, DIALOGUE: Yeah, but admit it—life's never boring with us, is it?
+2025-11-01 02:57:55,214 - INFO - SPEAKER: Drax, DIALOGUE: "Finally!
+2025-11-01 02:57:55,214 - INFO - SPEAKER: Groot, DIALOGUE: A worthy challenge!"
+
+As blaster fire filled the air, Rocket scrambled up Groot's shoulders.
+2025-11-01 02:57:55,215 - INFO - SPEAKER: Groot, DIALOGUE: "Okay, big guy, time to make like a tree and leave!
+2025-11-01 02:57:55,215 - INFO - SPEAKER: Peter, DIALOGUE: You know,
+2025-11-01 02:57:55,215 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora deflected a blast with her sword.
+2025-11-01 02:57:55,216 - INFO - SPEAKER: Gamora, DIALOGUE: Just focus on not getting us killed, Star-Lord.
+2025-11-01 02:57:55,216 - INFO - SPEAKER: Drax, DIALOGUE: But it worked great!"
+
+Drax was having the time of his life, laughing as he disarmed Nova Corps officers with precise, non-lethal strikes.
+2025-11-01 02:57:55,217 - INFO - SPEAKER: Drax, DIALOGUE: "Your weapons are useless against me!
+2025-11-01 02:57:55,217 - INFO - SPEAKER: Drax the Destroyer, DIALOGUE: I am Drax the Destroyer!"
+
+
+2025-11-01 02:57:55,217 - INFO - SPEAKER: Peter, DIALOGUE: The sudden silence was broken by Peter's voice.
+2025-11-01 02:57:55,218 - INFO - SPEAKER: Peter, DIALOGUE: "Okay, that was actually pretty impressive.
+2025-11-01 02:57:55,218 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora sheathed her sword.
+2025-11-01 02:57:55,218 - INFO - SPEAKER: Gamora, DIALOGUE: "The orb is secured.
+2025-11-01 02:57:55,218 - INFO - SPEAKER: Peter, DIALOGUE: "
+
+As the team regrouped and made their escape, Peter looked at the unlikely group of misfits around him.
+2025-11-01 02:57:55,219 - INFO - SPEAKER: Gamora, DIALOGUE: You know, we might not be the most professional crew in the galaxy...
+2025-11-01 02:57:55,219 - INFO - SPEAKER: Gamora, DIALOGUE: I am Groot,
+2025-11-01 02:57:55,219 - INFO - SPEAKER: Peter, DIALOGUE: Rocket climbed onto Peter's shoulder.
+2025-11-01 02:57:55,219 - INFO - SPEAKER: Peter, DIALOGUE: "Yeah, yeah, we're great.
+2025-11-01 02:57:55,457 - INFO - Stored entities and relationships in database
+2025-11-01 02:57:55,472 - INFO - Wrote entities_relationships.json
+2025-11-01 02:57:55,666 - INFO - Stored entity dialogues in database
+2025-11-01 02:57:55,675 - INFO - Wrote entity_dialogues.json
+2025-11-01 02:57:55,676 - INFO - preprocess_book() finished
+2025-11-01 02:57:55,677 - INFO - main() exit
+2025-11-01 02:57:55,680 - INFO - main() exit

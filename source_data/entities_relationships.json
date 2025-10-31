@@ -1,0 +1,32 @@
+[
+  {
+    "entity1": "Drax",
+    "entity2": "Destroyer",
+    "relationship": "interacted",
+    "context": "\"\n\nDrax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon."
+  },
+  {
+    "entity1": "Peter",
+    "entity2": "Gamora",
+    "relationship": "interacted",
+    "context": "As Peter and Gamora approached the temple entrance, Peter glanced at her."
+  },
+  {
+    "entity1": "Drax",
+    "entity2": "Nova Corps",
+    "relationship": "interacted",
+    "context": "\"Yeah, but admit it—life's never boring with us, is it?\"\n\nDrax let out a joyful roar as he charged toward the first group of Nova Corps officers."
+  },
+  {
+    "entity1": "Peter",
+    "entity2": "Gamora",
+    "relationship": "interacted",
+    "context": "Peter and Gamora fought back to back, their movements perfectly synchronized despite their constant bickering."
+  },
+  {
+    "entity1": "Drax",
+    "entity2": "Nova Corps",
+    "relationship": "interacted",
+    "context": "But it worked great!\"\n\nDrax was having the time of his life, laughing as he disarmed Nova Corps officers with precise, non-lethal strikes."
+  }
+]

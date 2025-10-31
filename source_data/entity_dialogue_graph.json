@@ -1,0 +1,285 @@
+{
+  "nodes": [
+    {
+      "id": "Gamora",
+      "members": [
+        "Gamora"
+      ],
+      "aliases": [],
+      "count": 13
+    },
+    {
+      "id": "Star",
+      "members": [
+        "Star"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Peter",
+      "members": [
+        "Peter"
+      ],
+      "aliases": [],
+      "count": 14
+    },
+    {
+      "id": "Drax",
+      "members": [
+        "Drax"
+      ],
+      "aliases": [],
+      "count": 7
+    },
+    {
+      "id": "Groot",
+      "members": [
+        "Groot"
+      ],
+      "aliases": [],
+      "count": 2
+    },
+    {
+      "id": "Drax the Destroyer",
+      "members": [
+        "Drax the Destroyer"
+      ],
+      "aliases": [],
+      "count": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "Gamora",
+      "target": "Gamora",
+      "count": 7,
+      "dialogs": [
+        "Remember the plan,"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Gamora",
+      "target": "Star",
+      "count": 2,
+      "dialogs": [
+        "Remember the plan,"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Gamora",
+      "target": "Peter",
+      "count": 11,
+      "dialogs": [
+        "Remember the plan,"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Gamora",
+      "count": 3,
+      "dialogs": [
+        "Remember the plan,"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Gamora",
+      "target": "Groot",
+      "count": 1,
+      "dialogs": [
+        "Remember the plan,"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax the Destroyer",
+      "target": "Gamora",
+      "count": 1,
+      "dialogs": [
+        "Remember the plan,"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Star",
+      "target": "Star",
+      "count": 1,
+      "dialogs": [
+        "\"But that doesn't mean I have to like taking orders from Mr. Star-Prince over here."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Peter",
+      "target": "Star",
+      "count": 2,
+      "dialogs": [
+        "\"But that doesn't mean I have to like taking orders from Mr. Star-Prince over here."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Star",
+      "count": 1,
+      "dialogs": [
+        "\"But that doesn't mean I have to like taking orders from Mr. Star-Prince over here."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Groot",
+      "target": "Star",
+      "count": 1,
+      "dialogs": [
+        "\"But that doesn't mean I have to like taking orders from Mr. Star-Prince over here."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax the Destroyer",
+      "target": "Star",
+      "count": 1,
+      "dialogs": [
+        "\"But that doesn't mean I have to like taking orders from Mr. Star-Prince over here."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Peter",
+      "target": "Peter",
+      "count": 6,
+      "dialogs": [
+        "\"\n\nPeter turned to face them, his trademark smirk visible even through his helmet."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Peter",
+      "count": 5,
+      "dialogs": [
+        "\"\n\nPeter turned to face them, his trademark smirk visible even through his helmet."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Groot",
+      "target": "Peter",
+      "count": 2,
+      "dialogs": [
+        "\"\n\nPeter turned to face them, his trademark smirk visible even through his helmet."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax the Destroyer",
+      "target": "Peter",
+      "count": 2,
+      "dialogs": [
+        "\"\n\nPeter turned to face them, his trademark smirk visible even through his helmet."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Drax",
+      "count": 4,
+      "dialogs": [
+        "\"\n\nDrax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Groot",
+      "count": 2,
+      "dialogs": [
+        "\"\n\nDrax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Drax the Destroyer",
+      "count": 2,
+      "dialogs": [
+        "\"\n\nDrax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Groot",
+      "target": "Groot",
+      "count": 2,
+      "dialogs": [
+        "A worthy challenge!\"\n\nAs blaster fire filled the air, Rocket scrambled up Groot's shoulders."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax the Destroyer",
+      "target": "Groot",
+      "count": 1,
+      "dialogs": [
+        "A worthy challenge!\"\n\nAs blaster fire filled the air, Rocket scrambled up Groot's shoulders."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Drax the Destroyer",
+      "target": "Drax the Destroyer",
+      "count": 1,
+      "dialogs": [
+        "I am Drax the Destroyer!\"\n\n"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    }
+  ]
+}

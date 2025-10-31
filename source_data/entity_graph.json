@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "Drax",
+      "members": [
+        "Drax"
+      ],
+      "aliases": [],
+      "count": 3
+    },
+    {
+      "id": "Destroyer",
+      "members": [
+        "Destroyer"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Peter",
+      "members": [
+        "Peter"
+      ],
+      "aliases": [],
+      "count": 2
+    },
+    {
+      "id": "Gamora",
+      "members": [
+        "Gamora"
+      ],
+      "aliases": [],
+      "count": 2
+    },
+    {
+      "id": "Nova Corps",
+      "members": [
+        "Nova Corps"
+      ],
+      "aliases": [],
+      "count": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "Destroyer",
+      "target": "Drax",
+      "count": 1,
+      "relationships": {
+        "interacted": 1
+      },
+      "contexts": [
+        "\"\n\nDrax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon."
+      ]
+    },
+    {
+      "source": "Gamora",
+      "target": "Peter",
+      "count": 2,
+      "relationships": {
+        "interacted": 2
+      },
+      "contexts": [
+        "As Peter and Gamora approached the temple entrance, Peter glanced at her.",
+        "Peter and Gamora fought back to back, their movements perfectly synchronized despite their constant bickering."
+      ]
+    },
+    {
+      "source": "Drax",
+      "target": "Nova Corps",
+      "count": 2,
+      "relationships": {
+        "interacted": 2
+      },
+      "contexts": [
+        "\"Yeah, but admit it—life's never boring with us, is it?\"\n\nDrax let out a joyful roar as he charged toward the first group of Nova Corps officers.",
+        "But it worked great!\"\n\nDrax was having the time of his life, laughing as he disarmed Nova Corps officers with precise, non-lethal strikes."
+      ]
+    }
+  ]
+}
