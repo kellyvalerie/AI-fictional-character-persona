@@ -1,80 +1,78 @@
 {
   "nodes": [
     {
-      "id": "Drax",
+      "id": "The Brothers Grimm's",
       "members": [
-        "Drax"
-      ],
-      "aliases": [],
-      "count": 3
-    },
-    {
-      "id": "Destroyer",
-      "members": [
-        "Destroyer"
+        "The Brothers Grimm's"
       ],
       "aliases": [],
       "count": 1
     },
     {
-      "id": "Peter",
+      "id": "Little Red-Cap",
       "members": [
-        "Peter"
+        "Little Red-Cap"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Little Red Riding Hood",
+      "members": [
+        "Little Red Riding Hood"
       ],
       "aliases": [],
       "count": 2
     },
     {
-      "id": "Gamora",
+      "id": "wolf",
       "members": [
-        "Gamora"
+        "wolf"
       ],
       "aliases": [],
-      "count": 2
+      "count": 1
     },
     {
-      "id": "Nova Corps",
+      "id": "Grandma",
       "members": [
-        "Nova Corps"
+        "Grandma"
       ],
       "aliases": [],
-      "count": 2
+      "count": 1
     }
   ],
   "edges": [
     {
-      "source": "Destroyer",
-      "target": "Drax",
+      "source": "Little Red-Cap",
+      "target": "The Brothers Grimm's",
       "count": 1,
       "relationships": {
         "interacted": 1
       },
       "contexts": [
-        "\"\n\nDrax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon."
+        "Young readers can compare this classic version with The Brothers Grimm's original telling, Little Red-Cap, to discover how the story has evolved over time.\n"
       ]
     },
     {
-      "source": "Gamora",
-      "target": "Peter",
-      "count": 2,
+      "source": "Little Red Riding Hood",
+      "target": "wolf",
+      "count": 1,
       "relationships": {
-        "interacted": 2
+        "interacted": 1
       },
       "contexts": [
-        "As Peter and Gamora approached the temple entrance, Peter glanced at her.",
-        "Peter and Gamora fought back to back, their movements perfectly synchronized despite their constant bickering."
+        "“Good morning, Little Red Riding Hood,” said the wolf.\n\n"
       ]
     },
     {
-      "source": "Drax",
-      "target": "Nova Corps",
-      "count": 2,
+      "source": "Grandma",
+      "target": "Little Red Riding Hood",
+      "count": 1,
       "relationships": {
-        "interacted": 2
+        "interacted": 1
       },
       "contexts": [
-        "\"Yeah, but admit it—life's never boring with us, is it?\"\n\nDrax let out a joyful roar as he charged toward the first group of Nova Corps officers.",
-        "But it worked great!\"\n\nDrax was having the time of his life, laughing as he disarmed Nova Corps officers with precise, non-lethal strikes."
+        "“But, Grandma—what a terrible big mouth you have!”\n\n“The better to eat you with!” roared the wolf, and before she could scream, he sprang from the bed and swallowed Little Red Riding Hood whole.\n\n"
       ]
     }
   ]

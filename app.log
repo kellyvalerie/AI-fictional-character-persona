@@ -120,3 +120,134 @@ As the team regrouped and made their escape, Peter looked at the unlikely group 
 2025-11-01 02:57:55,676 - INFO - preprocess_book() finished
 2025-11-01 02:57:55,677 - INFO - main() exit
 2025-11-01 02:57:55,680 - INFO - main() exit
+2025-11-01 21:21:23,196 - INFO - Cleaned and recreated working directory: ./source_data/
+2025-11-01 21:21:53,068 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-11-01 21:21:53,515 - INFO - Extracted entities and relationships:
+2025-11-01 21:21:53,516 - INFO - ENTITY1: Drax, ENTITY2: Destroyer, RELATIONSHIP: interacted
+2025-11-01 21:21:53,516 - INFO - ENTITY1: Peter, ENTITY2: Gamora, RELATIONSHIP: interacted
+2025-11-01 21:21:53,517 - INFO - ENTITY1: Drax, ENTITY2: Nova Corps, RELATIONSHIP: interacted
+2025-11-01 21:21:53,522 - INFO - ENTITY1: Peter, ENTITY2: Gamora, RELATIONSHIP: interacted
+2025-11-01 21:21:53,523 - INFO - ENTITY1: Drax, ENTITY2: Nova Corps, RELATIONSHIP: interacted
+2025-11-01 21:22:21,391 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-11-01 21:22:21,608 - INFO - Extracted entity dialogues:
+2025-11-01 21:22:21,609 - INFO - SPEAKER: Gamora, DIALOGUE: Remember the plan,
+2025-11-01 21:22:21,610 - INFO - SPEAKER: Gamora, DIALOGUE: "We get in, grab the orb, and get out.
+2025-11-01 21:22:21,611 - INFO - SPEAKER: Star, DIALOGUE: "But that doesn't mean I have to like taking orders from Mr. Star-Prince over here.
+2025-11-01 21:22:21,618 - INFO - SPEAKER: Peter, DIALOGUE: "
+
+Peter turned to face them, his trademark smirk visible even through his helmet.
+2025-11-01 21:22:21,619 - INFO - SPEAKER: Peter, DIALOGUE: "First of all, it's Star-Lord.
+2025-11-01 21:22:21,620 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora stepped between them, her voice tense.
+2025-11-01 21:22:21,620 - INFO - SPEAKER: Gamora, DIALOGUE: "Both of you, stop.
+2025-11-01 21:22:21,620 - INFO - SPEAKER: Drax, DIALOGUE: "
+
+Drax the Destroyer emerged from the shadows, his massive frame blocking what little light reached the canyon.
+2025-11-01 21:22:21,620 - INFO - SPEAKER: Drax, DIALOGUE: "I do not understand why we must sneak like cowards.
+2025-11-01 21:22:21,620 - INFO - SPEAKER: Peter, DIALOGUE: We've got a walking tree who only says three words, a destroyer who wants to fight everything, a green assassin who's too serious, and a human who thinks he's the boss of me.
+2025-11-01 21:22:21,621 - INFO - SPEAKER: Peter, DIALOGUE: "You know what?
+2025-11-01 21:22:21,621 - INFO - SPEAKER: Drax, DIALOGUE: I make no promises,
+2025-11-01 21:22:21,622 - INFO - SPEAKER: Peter, DIALOGUE: s supposed to be the most dangerous woman in the galaxy, you
+2025-11-01 21:22:21,622 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora kept her eyes forward.
+2025-11-01 21:22:21,623 - INFO - SPEAKER: Gamora, DIALOGUE: "Don't get sentimental, Quill.
+2025-11-01 21:22:21,623 - INFO - SPEAKER: Peter, DIALOGUE: Hey, I'm just saying—
+2025-11-01 21:22:21,623 - INFO - SPEAKER: Peter, DIALOGUE: Rocket's voice crackled over their comms.
+2025-11-01 21:22:21,624 - INFO - SPEAKER: Gamora, DIALOGUE: "I told you this would happen.
+2025-11-01 21:22:21,624 - INFO - SPEAKER: Peter, DIALOGUE: "
+
+Peter readied his element guns.
+2025-11-01 21:22:21,625 - INFO - SPEAKER: Drax, DIALOGUE: Yeah, but admit it—life's never boring with us, is it?
+2025-11-01 21:22:21,625 - INFO - SPEAKER: Drax, DIALOGUE: "Finally!
+2025-11-01 21:22:21,626 - INFO - SPEAKER: Groot, DIALOGUE: A worthy challenge!"
+
+As blaster fire filled the air, Rocket scrambled up Groot's shoulders.
+2025-11-01 21:22:21,627 - INFO - SPEAKER: Groot, DIALOGUE: "Okay, big guy, time to make like a tree and leave!
+2025-11-01 21:22:21,631 - INFO - SPEAKER: Peter, DIALOGUE: You know,
+2025-11-01 21:22:21,632 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora deflected a blast with her sword.
+2025-11-01 21:22:21,633 - INFO - SPEAKER: Gamora, DIALOGUE: Just focus on not getting us killed, Star-Lord.
+2025-11-01 21:22:21,634 - INFO - SPEAKER: Drax, DIALOGUE: But it worked great!"
+
+Drax was having the time of his life, laughing as he disarmed Nova Corps officers with precise, non-lethal strikes.
+2025-11-01 21:22:21,635 - INFO - SPEAKER: Drax, DIALOGUE: "Your weapons are useless against me!
+2025-11-01 21:22:21,636 - INFO - SPEAKER: Drax the Destroyer, DIALOGUE: I am Drax the Destroyer!"
+
+
+2025-11-01 21:22:21,636 - INFO - SPEAKER: Peter, DIALOGUE: The sudden silence was broken by Peter's voice.
+2025-11-01 21:22:21,636 - INFO - SPEAKER: Peter, DIALOGUE: "Okay, that was actually pretty impressive.
+2025-11-01 21:22:21,637 - INFO - SPEAKER: Gamora, DIALOGUE: "
+
+Gamora sheathed her sword.
+2025-11-01 21:22:21,637 - INFO - SPEAKER: Gamora, DIALOGUE: "The orb is secured.
+2025-11-01 21:22:21,638 - INFO - SPEAKER: Peter, DIALOGUE: "
+
+As the team regrouped and made their escape, Peter looked at the unlikely group of misfits around him.
+2025-11-01 21:22:21,638 - INFO - SPEAKER: Gamora, DIALOGUE: You know, we might not be the most professional crew in the galaxy...
+2025-11-01 21:22:21,638 - INFO - SPEAKER: Gamora, DIALOGUE: I am Groot,
+2025-11-01 21:22:21,638 - INFO - SPEAKER: Peter, DIALOGUE: Rocket climbed onto Peter's shoulder.
+2025-11-01 21:22:21,639 - INFO - SPEAKER: Peter, DIALOGUE: "Yeah, yeah, we're great.
+2025-11-01 21:22:21,891 - INFO - Stored entities and relationships in database
+2025-11-01 21:22:21,939 - INFO - Wrote entities_relationships.json
+2025-11-01 21:22:22,011 - INFO - Stored entity dialogues in database
+2025-11-01 21:22:22,023 - INFO - Wrote entity_dialogues.json
+2025-11-01 21:22:22,024 - INFO - preprocess_book() finished
+2025-11-01 21:22:22,027 - INFO - main() exit
+2025-11-01 21:22:22,035 - INFO - main() exit
+2025-11-01 21:25:46,921 - INFO - Cleaned and recreated working directory: ./source_data/
+2025-11-01 21:26:21,109 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-11-01 21:27:47,759 - INFO - Cleaned and recreated working directory: ./source_data/
+2025-11-01 21:29:39,600 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-11-01 21:31:31,882 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-11-01 21:31:31,885 - INFO - Extracted entities and relationships:
+2025-11-01 21:31:31,885 - INFO - ENTITY1: The Brothers Grimm's, ENTITY2: Little Red-Cap, RELATIONSHIP: interacted
+2025-11-01 21:31:31,886 - INFO - ENTITY1: Little Red Riding Hood, ENTITY2: wolf, RELATIONSHIP: interacted
+2025-11-01 21:31:31,886 - INFO - ENTITY1: Grandma, ENTITY2: Little Red Riding Hood, RELATIONSHIP: interacted
+2025-11-01 21:33:56,572 - INFO - Cleaned and recreated working directory: ./source_data/
+2025-11-01 21:35:39,189 - INFO - Extracted entities and relationships:
+2025-11-01 21:35:39,191 - INFO - ENTITY1: The Brothers Grimm's, ENTITY2: Little Red-Cap, RELATIONSHIP: interacted
+2025-11-01 21:35:39,191 - INFO - ENTITY1: Little Red Riding Hood, ENTITY2: wolf, RELATIONSHIP: interacted
+2025-11-01 21:35:39,191 - INFO - ENTITY1: Grandma, ENTITY2: Little Red Riding Hood, RELATIONSHIP: interacted
+2025-11-01 21:35:57,089 - INFO - Extracted entity dialogues:
+2025-11-01 21:35:57,090 - INFO - SPEAKER: Little Red-Cap, DIALOGUE: Young readers can compare this classic version with The Brothers Grimm's original telling, Little Red-Cap, to discover how the story has evolved over time.
+
+2025-11-01 21:35:57,135 - INFO - Stored entities and relationships in database
+2025-11-01 21:35:57,136 - INFO - Wrote entities_relationships.json
+2025-11-01 21:35:57,167 - INFO - Stored entity dialogues in database
+2025-11-01 21:35:57,169 - INFO - Wrote entity_dialogues.json
+2025-11-01 21:35:57,169 - INFO - preprocess_book() finished
+2025-11-01 21:35:57,173 - INFO - main() exit
+2025-11-01 21:35:57,193 - INFO - main() exit
+2025-11-01 22:00:29,901 - INFO - Cleaned and recreated working directory: ./source_data/
+2025-11-01 22:02:21,638 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-11-01 22:04:11,473 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-11-01 22:04:11,476 - INFO - Extracted entities and relationships:
+2025-11-01 22:04:11,479 - INFO - ENTITY1: The Brothers Grimm's, ENTITY2: Little Red-Cap, RELATIONSHIP: interacted
+2025-11-01 22:04:11,479 - INFO - ENTITY1: Little Red Riding Hood, ENTITY2: wolf, RELATIONSHIP: interacted
+2025-11-01 22:04:11,480 - INFO - ENTITY1: Grandma, ENTITY2: Little Red Riding Hood, RELATIONSHIP: interacted
+2025-11-01 22:06:03,562 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-11-01 22:07:55,035 - WARNING - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-11-01 22:07:55,053 - INFO - Extracted entity dialogues:
+2025-11-01 22:07:55,054 - INFO - SPEAKER: Little, DIALOGUE: “I’ll be careful, Mother,” said Little Red Riding Hood, and she promised with a smile.
+
+
+2025-11-01 22:07:55,054 - INFO - SPEAKER: wolf, DIALOGUE: “Good morning, Little Red Riding Hood,” said the wolf.
+
+
+2025-11-01 22:07:55,055 - INFO - SPEAKER: Wolf, DIALOGUE: “Good morning, Mr. Wolf,” she replied politely.
+
+
+2025-11-01 22:07:55,055 - INFO - SPEAKER: wolf, DIALOGUE: “It’s me—Little Red Riding Hood,” said the wolf sweetly.
+2025-11-01 22:07:55,055 - INFO - SPEAKER: wolf, DIALOGUE: “I’ve brought you cake and wine.”
+
+“Lift the latch,” said the grandmother.
+2025-11-01 22:07:55,190 - INFO - Stored entities and relationships in database
+2025-11-01 22:07:55,204 - INFO - Wrote entities_relationships.json
+2025-11-01 22:07:55,243 - INFO - Stored entity dialogues in database
+2025-11-01 22:07:55,244 - INFO - Wrote entity_dialogues.json
+2025-11-01 22:07:55,245 - INFO - preprocess_book() finished
+2025-11-01 22:07:55,246 - INFO - main() exit
+2025-11-01 22:07:55,247 - INFO - main() exit

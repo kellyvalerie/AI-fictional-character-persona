@@ -1,4 +1,4 @@
-import os
+﻿import os
 import json
 import logging
 from difflib import SequenceMatcher
@@ -89,7 +89,7 @@ def build_vectorizers(rels, dlg):
 
     return vectorizer, (rel_X, dlg_X), rel_texts, dlg_texts, rel_meta, dlg_meta
 
-
+# set k = 5
 def topk_sim(query, vectorizer, X, k=5):
     if X is None or X.shape[0] == 0:
         return []
@@ -111,15 +111,17 @@ def interactive(k=5):
 
     vectorizer, (rel_X, dlg_X), rel_texts, dlg_texts, rel_meta, dlg_meta = build_vectorizers(rels, dlg)
 
-    print("Available characters (from entity_graph):")
-    for n in nodes:
-        print(" - ", n)
+    # print("Available characters (from entity_graph):")
+    # for n in nodes:
+    #     print(" - ", n)
 
     chosen = input("Which character do you want? ").strip()
     match, score = best_match(chosen, nodes)
+    
     if match is None:
         print(f"No close match found for '{chosen}'. Proceeding with exact string as persona.")
         persona = chosen
+        interactive(k=5)
     else:
         persona = match
         print(f"Using persona: {persona} (match score {score:.2f})")
@@ -178,11 +180,33 @@ def interactive(k=5):
             model = os.environ.get("OLLAMA_MODEL", "phi3:mini")
             host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
             # Build a strict prompt that instructs the model to answer only from context
+            # Choose the strongest supporting snippet and build a strict prompt
+            sources = []
+            for idx, score in rel_results:
+                sources.append(("relation", idx, score, rel_texts[idx]))
+            for idx, score in dlg_results:
+                sources.append(("dialogue", idx, score, dlg_texts[idx]))
+            sources.sort(key=lambda x: -x[2])
+
+            if not sources:
+                print("No supporting context found — skipping LLM and replying 'I don't know'.")
+                print(f"\n--- {persona} (LLM answer) ---")
+                print("I don't know")
+                print("--- end LLM answer ---\n")
+                continue
+
+            # pick top support for strict, evidence-based answering
+            top_kind, top_idx, top_score, top_text = sources[0]
+            # debug: show which snippet we're sending
+            logging.info("Top support: kind=%s idx=%s score=%.4f", top_kind, top_idx, top_score)
+            print(f"\nUsing top support (score={top_score:.3f}, kind={top_kind}, idx={top_idx}) for the LLM call.\n")
+
             prompt = (
                 f"You are {persona}.\n"
-                "Answer the user question using ONLY the CONTEXT below. Do not add any information that is not present in the context. If the answer is not contained in the context, reply 'I don't know'. Keep the answer in-character for the persona.\n\n"
-                "CONTEXT:\n"
-                + "\n\n".join(combined)
+                "Use ONLY the SUPPORT text below to answer the question. Do not add any information that is not present in the SUPPORT.\n"
+                "If the answer cannot be produced exactly from the SUPPORT, reply EXACTLY: I don't know\n\n"
+                "SUPPORT:\n"
+                + top_text
                 + "\n\nQUESTION:\n"
                 + q
                 + f"\n\nAnswer as {persona}:"
@@ -190,23 +214,53 @@ def interactive(k=5):
             # call ollama
             try:
                 resp = None
-                payload = {"model": model, "prompt": prompt}
+                payload = {"model": model, "prompt": prompt, "temperature": 0, "max_tokens": 256}
                 timeout = int(os.environ.get("OLLAMA_TIMEOUT", "120"))
-                r = requests.post(f"{host}/api/generate", json=payload, timeout=timeout)
-                # r = requests.post(f"{host}/api/generate", json=payload, timeout=30)
-                r.raise_for_status()
-                text = r.text.strip()
+                streamed = False
+                # Stream the response so we can display incremental fragments as they arrive
                 try:
-                    resp = json.loads(text)
+                    with requests.post(f"{host}/api/generate", json=payload, timeout=timeout, stream=True) as r:
+                        r.raise_for_status()
+                        collected = []
+                        printed_fragments = False
+                        for ln in r.iter_lines(decode_unicode=True):
+                            if not ln:
+                                continue
+                            try:
+                                obj = json.loads(ln)
+                                if isinstance(obj, dict) and obj.get("response") is not None:
+                                    frag = obj.get("response") or ""
+                                    print(frag, end="", flush=True)
+                                    collected.append(str(frag))
+                                    printed_fragments = True
+                                if isinstance(obj, dict) and obj.get("done"):
+                                    break
+                            except Exception:
+                                # non-JSON line: print and collect
+                                print(ln, end="", flush=True)
+                                collected.append(str(ln))
+                                printed_fragments = True
+                        if printed_fragments:
+                            print("\n--- end LLM answer ---\n")
+                            streamed = True
+                        resp = "".join(collected) if collected else None
                 except Exception:
-                    resp = text
-
-                print(f"\n--- {persona} (LLM answer) ---")
-                if isinstance(resp, (list, dict)):
-                    print(json.dumps(resp, ensure_ascii=False, indent=2))
-                else:
-                    print(resp)
-                print("--- end LLM answer ---\n")
+                    # Fallback: non-streaming request (older behavior)
+                    r = requests.post(f"{host}/api/generate", json=payload, timeout=timeout)
+                    r.raise_for_status()
+                    text = r.text
+                    try:
+                        resp = json.loads(text)
+                    except Exception:
+                        resp = text.strip()
+                # Only print assembled response when it wasn't already streamed
+                if not streamed:
+                    print(f"\n--- {persona} (LLM answer) ---")
+                    if isinstance(resp, (list, dict)):
+                        print(json.dumps(resp, ensure_ascii=False, indent=2))
+                    else:
+                        print(resp)
+                    # print("--- end LLM answer ---\n")
             except Exception as e:
                 logging.warning("LLM call failed: %s", e)
                 print("LLM unavailable or failed to generate an answer. (Install/run Ollama and set OLLAMA_HOST/OLLAMA_MODEL if desired)")

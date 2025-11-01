@@ -20,10 +20,32 @@ def configure_logging():
         ]
     )
 
-def call_ollama(prompt, model="phi3:mini", host="http://localhost:11434"):
+def call_ollama(prompt, model="phi3:mini", host="http://localhost:11434", timeout=None):
+    """
+    Call Ollama to generate a response.
+
+    Args:
+        prompt (str): The prompt to send.
+        model (str): Ollama model identifier.
+        host (str): Ollama host URL.
+        timeout (int|None): Optional request timeout in seconds. If None, will read
+            from the OLLAMA_TIMEOUT environment variable (default 120).
+
+    Returns:
+        Parsed JSON response when available, otherwise the raw text. Returns None on error.
+    """
     try:
         payload = {"model": model, "prompt": prompt}
-        resp = requests.post(f"{host}/api/generate", json=payload, timeout=30)
+        if timeout is None:
+            timeout = int(os.environ.get("OLLAMA_TIMEOUT", "120"))
+        else:
+            # ensure timeout is an int if a value was passed
+            try:
+                timeout = int(timeout)
+            except Exception:
+                timeout = int(os.environ.get("OLLAMA_TIMEOUT", "120"))
+
+        resp = requests.post(f"{host}/api/generate", json=payload, timeout=timeout)
         resp.raise_for_status()
         # Try to parse JSON response body; many Ollama setups return plain text or streaming NDJSON.
         text = resp.text.strip()
@@ -52,10 +74,13 @@ class DataPreprocessor:
         
         # Step 2: Identify entities and relationships (use precomputed sentence batches)
         entities_relationships = self.extract_entities_relationships(batches['sents'])
-        
-        # Step 3: Identify entities and dialogues (use precomputed quote batches) 
-        entity_dialogues = self.extract_entity_dialogues(batches['quotes'])
-        
+
+        # Step 3: Identify entities and dialogues (use precomputed sentence batches)
+        # We pass full sentence batches (not just quote-containing ones) so an LLM
+        # can classify whether a sentence represents dialogue even when it lacks
+        # explicit quotation marks.
+        entity_dialogues = self.extract_entity_dialogues(batches['sents'])
+
         # Store in databases
         self.store_entities_relationships(entities_relationships)
         self.store_entity_dialogues(entity_dialogues)
@@ -138,6 +163,19 @@ class DataPreprocessor:
         return {'entities': entities, 'relationships': relationships}
     
     def extract_entity_dialogues(self, batches):
+        """
+        Identify dialogues within sentence batches.
+
+        We attempt to use the LLM to classify which sentences are dialogues and to
+        extract speaker + dialogue text even when quotation marks are absent.
+        Falls back to heuristic detection when the LLM is unavailable or returns
+        an unexpected format.
+
+        Args:
+            batches: list of batches, where each batch is a list of spaCy spans
+        Returns:
+            dialogues: list of dicts with keys 'speaker', 'dialogue', 'context'
+        """
         dialogues = []
         
         for batch in batches:
@@ -145,28 +183,62 @@ class DataPreprocessor:
             for i, s in enumerate(batch):
                 number.append(f"### SENTENCE {i}\n{s.text.strip()}")
             prompt = (
-                "For each numbered sentence below return JSON array of objects {\"sent_index\": int, \"speaker\": \"Name\" or null, \"dialogue\": \"quoted text\"}.\n\n"
+                "For each numbered sentence below, determine whether it contains a"
+                " real dialogue (a spoken utterance) and if so return an object"
+                " {\"sent_index\": int, \"is_dialogue\": true, \"speaker\": \"Name\" or null, \"dialogue\": \"the quoted or spoken text\"}.\n"
+                "Return a JSON array containing only entries where is_dialogue is true."
+                + "\n\n"
                 + "\n\n".join(number)
             )
-            llm_out = call_ollama(prompt, timeout=120) if 'timeout' in call_ollama.__code__.co_varnames else call_ollama(prompt)
+
+            # Use the explicit timeout parameter (call_ollama supports it now).
+            llm_out = call_ollama(prompt, timeout=120)
             if isinstance(llm_out, list):
                 for item in llm_out:
-                    speaker = item.get("speaker")
-                    dialogue_text = item.get("dialogue")
-                    if speaker:
-                        dialogues.append({
-                            'speaker': speaker,
-                            'dialogue': dialogue_text,
-                            'context': 'conversation'
-                        })
-                continue  # skip to next batch if LLM extraction succeeded
+                    try:
+                        if not item.get("is_dialogue"):
+                            continue
+                        sent_index = item.get("sent_index")
+                        speaker = item.get("speaker")
+                        dialogue_text = item.get("dialogue")
+                        # If dialogue text missing, try to fill from the sentence
+                        if not dialogue_text and isinstance(sent_index, int) and 0 <= sent_index < len(batch):
+                            dialogue_text = batch[sent_index].text
+                        # Only keep entries that have at least a speaker or dialogue
+                        if speaker or dialogue_text:
+                            dialogues.append({
+                                'speaker': speaker,
+                                'dialogue': dialogue_text,
+                                'context': 'conversation'
+                            })
+                    except Exception:
+                        # skip malformed items
+                        continue
+                # proceed to next batch regardless of whether the LLM returned any items
             else:
-                # fallback to existing heuristic detection
+                # Fallback: heuristic detection similar to before, but operate on
+                # all sentences in the batch (not only those with quotes).
                 for sent in batch:
                     speaker = self.detect_speaker(sent)
-                    if speaker:
-                        m = re.search(r'(["\']).*?\1', sent.text)
-                        dialogue_text = m.group(0).strip('"\'') if m else sent.text
+                    is_dialogue = False
+                    dialogue_text = None
+
+                    # 1) If there are explicit quotes, consider it dialogue
+                    m = re.search(r'(["\']).*?\1', sent.text)
+                    if m:
+                        is_dialogue = True
+                        dialogue_text = m.group(0).strip('"\'')
+
+                    # 2) If detect_speaker found a speaker and reporting verb present,
+                    # treat as dialogue
+                    if not is_dialogue and speaker:
+                        if re.search(r'\b(?:said|replied|asked|whispered|shouted|cried|muttered|answered)\b', sent.text, re.IGNORECASE):
+                            is_dialogue = True
+                            # prefer quoted substring if present, otherwise the sentence
+                            if not dialogue_text:
+                                dialogue_text = sent.text
+
+                    if is_dialogue and (speaker or dialogue_text):
                         dialogues.append({
                             'speaker': speaker,
                             'dialogue': dialogue_text,
