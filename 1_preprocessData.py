@@ -6,9 +6,20 @@ import logging
 import shutil
 import requests
 import json
+import hashlib
 from sklearn.feature_extraction.text import TfidfVectorizer
+import pickle
+from pathlib import Path
 
 WORKING_DIR = "./source_data/"
+CACHE_FILE = "ollama_cache.jsonl"
+
+cache = {}
+if os.path.exists(CACHE_FILE):
+    with open(CACHE_FILE) as f:
+        for line in f:
+            obj = json.loads(line)
+            cache[obj["prompt_hash"]] = obj["response"]
 
 def configure_logging():
     logging.basicConfig(
@@ -20,7 +31,7 @@ def configure_logging():
         ]
     )
 
-def call_ollama(prompt, model="phi3:mini", host="http://localhost:11434", timeout=None):
+def call_ollama(prompt, model="gemma2:2b", host="http://localhost:11434", timeout=None):
     """
     Call Ollama to generate a response.
 
@@ -37,13 +48,13 @@ def call_ollama(prompt, model="phi3:mini", host="http://localhost:11434", timeou
     try:
         payload = {"model": model, "prompt": prompt}
         if timeout is None:
-            timeout = int(os.environ.get("OLLAMA_TIMEOUT", "120"))
+            timeout = int(os.environ.get("OLLAMA_TIMEOUT", "600"))
         else:
             # ensure timeout is an int if a value was passed
             try:
                 timeout = int(timeout)
             except Exception:
-                timeout = int(os.environ.get("OLLAMA_TIMEOUT", "120"))
+                timeout = int(os.environ.get("OLLAMA_TIMEOUT", "600"))
 
         resp = requests.post(f"{host}/api/generate", json=payload, timeout=timeout)
         resp.raise_for_status()
@@ -57,6 +68,18 @@ def call_ollama(prompt, model="phi3:mini", host="http://localhost:11434", timeou
     except Exception as e:
         logging.warning("Ollama call failed: %s", e)
         return None
+
+def call_ollama_cached(prompt, model="gemma2:2b", timeout=600):
+    h = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
+    if h in cache:
+        return cache[h]
+
+    result = call_ollama(prompt, model=model, timeout=timeout)
+    cache[h] = result
+    with open(CACHE_FILE, "a", encoding="utf-8") as f:
+        json.dump({"prompt_hash": h, "response": result}, f, ensure_ascii=False)
+        f.write("\n")
+    return result
     
 class DataPreprocessor:
 
@@ -127,7 +150,7 @@ class DataPreprocessor:
                 + "\n\n".join(number)
             )
             #1 using LLM
-            llm_out = call_ollama(prompt)
+            llm_out = call_ollama_cached(prompt)
             if isinstance(llm_out, list):
                 # expecting a list where each element may be { "sent_index": int, "relationships": [...] }
                 for item in llm_out:
@@ -192,7 +215,7 @@ class DataPreprocessor:
             )
 
             # Use the explicit timeout parameter (call_ollama supports it now).
-            llm_out = call_ollama(prompt, timeout=120)
+            llm_out = call_ollama_cached(prompt, timeout=600)
             if isinstance(llm_out, list):
                 for item in llm_out:
                     try:

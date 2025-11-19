@@ -109,6 +109,7 @@ def build_dialogue_graph(input_path=None, output_path=None, verbose=True):
     for d in dialogues:
         ctx = d.get("context") or ""
         speaker = d.get("speaker")
+        
         # prefer explicit 'dialogue' field for the quoted text, otherwise use context
         dialogue_text = d.get("dialogue") if d.get("dialogue") is not None else d.get("context")
         if not speaker:
