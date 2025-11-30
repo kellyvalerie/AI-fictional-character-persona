@@ -9,7 +9,6 @@ what does it do?
 4. extract entities & relationship from text (using LLM)
 5. extract entities & dialogues from text (using LLM)
 6. store entities+relationship, and store entities+dialogues
-7. embeddings (coming soon)
 
 2_EntitiesRelationshipGraph.py
 what does it do?

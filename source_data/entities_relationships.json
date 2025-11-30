@@ -1,0 +1,686 @@
+[
+  {
+    "entity1": "Frankenstein",
+    "entity2": "Mary Wollstonecraft Shelley\n\n",
+    "relationship": "interacted",
+    "context": "Title: Frankenstein; Or, The Modern Prometheus\n\nAuthor: Mary Wollstonecraft Shelley\n\nRelease date: October 1, 1993"
+  },
+  {
+    "entity1": "Judith Boss",
+    "entity2": "Christy Phillips",
+    "relationship": "interacted",
+    "context": "[eBook #84]\n                Most recently updated: September 8, 2025\n\nLanguage: English\n\nCredits: Judith Boss, Christy Phillips, Lynn Hanninen and David Meltzer."
+  },
+  {
+    "entity1": "Frankenstein",
+    "entity2": "Mary Wollstonecraft",
+    "relationship": "interacted",
+    "context": "*** START OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN; OR, THE MODERN PROMETHEUS ***\n\nFrankenstein;\n\nor, the Modern Prometheus\n\nby Mary Wollstonecraft (Godwin) Shelley\n\n\n CONTENTS\n\n Letter 1\n Letter 2\n Letter 3\n Letter 4\n Chapter 1\n Chapter 2\n Chapter 3\n Chapter 4\n Chapter 5\n Chapter 6\n Chapter 7\n Chapter 8\n Chapter 9\n Chapter 10\n Chapter 11\n Chapter 12\n Chapter 13\n Chapter 14\n Chapter 15\n Chapter 16\n Chapter 17\n Chapter 18\n Chapter 19\n Chapter 20\n Chapter 21\n Chapter 22\n Chapter 23\n Chapter 24\n\n\n\n\nLetter 1\n\n_To Mrs. Saville, England."
+  },
+  {
+    "entity1": "Farewell",
+    "entity2": "Margaret",
+    "relationship": "interacted",
+    "context": "Farewell, my dear, excellent Margaret."
+  },
+  {
+    "entity1": "R. Walton",
+    "entity2": "Letter 2",
+    "relationship": "interacted",
+    "context": "Your affectionate brother,\n\nR. Walton\n\n\n\n\nLetter 2\n\n_To Mrs. Saville, England._\n\nArchangel, 28th March, 17—.\n\n\nHow slowly the time passes here, encompassed as I am by frost and snow!"
+  },
+  {
+    "entity1": "Robert Walton",
+    "entity2": "Saville",
+    "relationship": "interacted",
+    "context": "Your affectionate brother,\n Robert Walton\n\n\n\n\nLetter 3\n\n_To Mrs. Saville, England."
+  },
+  {
+    "entity1": "Adieu",
+    "entity2": "Margaret",
+    "relationship": "interacted",
+    "context": "Adieu, my dear Margaret."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "And when, on the morrow, she\npresented Elizabeth to me as her promised gift, I, with childish\nseriousness, interpreted her words literally and looked upon Elizabeth\nas mine—mine to protect, love, and cherish."
+  },
+  {
+    "entity1": "Clerval",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "And\nClerval—could aught ill entrench on the noble spirit of Clerval?"
+  },
+  {
+    "entity1": "Agrippa",
+    "entity2": "Agrippa",
+    "relationship": "interacted",
+    "context": "If, instead of this remark, my father had taken the pains to explain to me\nthat the principles of Agrippa had been entirely exploded and that a modern\nsystem of science had been introduced which possessed much greater powers\nthan the ancient, because the powers of the latter were chimerical, while\nthose of the former were real and practical, under such circumstances I\nshould certainly have thrown Agrippa aside and have contented my\nimagination, warmed as it was, by returning with greater ardour to my\nformer studies."
+  },
+  {
+    "entity1": "Cornelius Agrippa",
+    "entity2": "Albertus Magnus",
+    "relationship": "interacted",
+    "context": "All that he said threw greatly into the shade Cornelius Agrippa,\nAlbertus Magnus, and Paracelsus, the lords of my imagination; but by\nsome fatality the overthrow of these men disinclined me to pursue my\naccustomed studies."
+  },
+  {
+    "entity1": "Clerval",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "It was said, and we\nretired under the pretence of seeking repose, each fancying that the\nother was deceived; but when at morning’s dawn I descended to the\ncarriage which was to convey me away, they were all there—my father\nagain to bless me, Clerval to press my hand once more, my Elizabeth to\nrenew her entreaties that I would write often and to bestow the last\nfeminine attentions on her playmate and friend."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "I loved my brothers, Elizabeth, and\nClerval; these were “old familiar faces,” but I believed myself\ntotally unfitted for the company of strangers."
+  },
+  {
+    "entity1": "Krempe",
+    "entity2": "Cornelius Agrippa",
+    "relationship": "interacted",
+    "context": "Professor Krempe often asked me,\nwith a sly smile, how Cornelius Agrippa went on, whilst M. Waldman\nexpressed the most heartfelt exultation in my progress."
+  },
+  {
+    "entity1": "Clerval",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "How fortunate that you should be here at\nthe very moment of my alighting!”\n\nNothing could equal my delight on seeing Clerval; his presence brought back\nto my thoughts my father, Elizabeth, and all those scenes of home so dear\nto my recollection."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Henry",
+    "relationship": "interacted",
+    "context": "It was from my\nown Elizabeth:\n\n“My dearest Cousin,\n\n“You have been ill, very ill, and even the constant letters of dear\nkind Henry are not sufficient to reassure me on your account."
+  },
+  {
+    "entity1": "Moritz",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "Madame Moritz,\nher mother, was a widow with four children, of whom Justine was the\nthird."
+  },
+  {
+    "entity1": "Mansfield",
+    "entity2": "Englishman",
+    "relationship": "interacted",
+    "context": "The pretty Miss Mansfield\nhas already received the congratulatory visits on her approaching\nmarriage with a young Englishman, John Melbourne, Esq."
+  },
+  {
+    "entity1": "Louis Manoir",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "Your\nfavourite schoolfellow, Louis Manoir, has suffered several misfortunes\nsince the departure of Clerval from Geneva."
+  },
+  {
+    "entity1": "M. Krempe",
+    "entity2": "M. Waldman",
+    "relationship": "interacted",
+    "context": "M. Krempe was not equally docile; and in my condition at that time, of\nalmost insupportable sensitiveness, his harsh blunt encomiums gave me even\nmore pain than the benevolent approbation of M. Waldman."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Ernest",
+    "relationship": "interacted",
+    "context": "It was already dusk before we thought of\nreturning; and then we discovered that William and Ernest, who had gone\non before, were not to be found."
+  },
+  {
+    "entity1": "Ernest",
+    "entity2": "William",
+    "relationship": "interacted",
+    "context": "Presently Ernest came, and enquired if we had seen\nhis brother; he said, that he had been playing with him, that William\nhad run away to hide himself, and that he vainly sought for him, and\nafterwards waited for a long time, but that he did not return."
+  },
+  {
+    "entity1": "Victor",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "“Come, dearest Victor; you alone can console Elizabeth."
+  },
+  {
+    "entity1": "Frankenstein",
+    "entity2": "Henry",
+    "relationship": "interacted",
+    "context": "“My dear Frankenstein,” exclaimed Henry, when he perceived me\nweep with bitterness, “are you always to be unhappy?"
+  },
+  {
+    "entity1": "Salêve",
+    "entity2": "Juras",
+    "relationship": "interacted",
+    "context": "It was echoed from Salêve, the Juras, and the Alps of\nSavoy; vivid flashes of lightning dazzled my eyes, illuminating the\nlake, making it appear like a vast sheet of fire; then for an instant\nevery thing seemed of a pitchy darkness, until the eye recovered itself\nfrom the preceding flash."
+  },
+  {
+    "entity1": "Ernest",
+    "entity2": "Victor",
+    "relationship": "interacted",
+    "context": "While I was thus engaged, Ernest\nentered: he had heard me arrive, and hastened to welcome me:\n“Welcome, my dearest Victor,” said he."
+  },
+  {
+    "entity1": "Justine Moritz",
+    "entity2": "Justine Moritz",
+    "relationship": "interacted",
+    "context": "Indeed, who would credit\nthat Justine Moritz, who was so amiable, and fond of all the family,\ncould suddenly become so capable of so frightful, so appalling a crime?”\n\n“Justine Moritz!"
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "He then related that, the morning on which the murder of poor William\nhad been discovered, Justine had been taken ill, and confined to her\nbed for several days."
+  },
+  {
+    "entity1": "Justine",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "Justine, poor,\ngood Justine, is innocent.”"
+  },
+  {
+    "entity1": "Victor",
+    "entity2": "William",
+    "relationship": "interacted",
+    "context": "Victor says that he knows who was the murderer of\npoor William.”\n\n“We do also, unfortunately,” replied my father, “for indeed I had\nrather have been for ever ignorant than have discovered so much\ndepravity and ungratitude in one I valued so highly.”"
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Chêne",
+    "relationship": "interacted",
+    "context": "She then related that, by the permission of Elizabeth, she had passed\nthe evening of the night on which the murder had been committed at the\nhouse of an aunt at Chêne, a village situated at about a league from\nGeneva."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "A murmur of approbation followed Elizabeth’s simple and powerful\nappeal, but it was excited by her generous interference, and not in\nfavour of poor Justine, on whom the public indignation was turned with\nrenewed violence, charging her with the blackest ingratitude."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "This was a dire blow to poor Elizabeth, who had relied with firmness upon\nJustine’s innocence."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Victor",
+    "relationship": "interacted",
+    "context": "“Yes,” said Elizabeth,\n“I will go, although she is guilty; and you, Victor, shall accompany\nme; I cannot go alone.”"
+  },
+  {
+    "entity1": "Justine",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "“No, Justine,” said Elizabeth; “he is more\nconvinced of your innocence than I was, for even when he heard that you\nhad confessed, he did not credit it.”"
+  },
+  {
+    "entity1": "Justine",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "We stayed several hours with\nJustine, and it was with great difficulty that Elizabeth could tear\nherself away."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Farewell",
+    "relationship": "interacted",
+    "context": "She embraced Elizabeth and said in a voice\nof half-suppressed emotion, “Farewell, sweet lady, dearest Elizabeth,\nmy beloved and only friend; may heaven, in its bounty, bless and\npreserve you; may this be the last misfortune that you will ever\nsuffer!"
+  },
+  {
+    "entity1": "Frankenstein",
+    "entity2": "kinsman",
+    "relationship": "interacted",
+    "context": "Frankenstein, your son, your kinsman, your early, much-loved friend; he\nwho would spend each vital drop of blood for your sakes, who has no\nthought nor sense of joy except as it is mirrored also in your dear\ncountenances, who would fill the air with blessings and spend his life\nin serving you—he bids you weep, to shed countless tears; happy beyond\nhis hopes, if thus inexorable fate be satisfied, and if the destruction\npause before the peace of the grave have succeeded to your sad torments!"
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "Thus spoke my prophetic soul, as, torn by remorse, horror, and despair,\nI beheld those I loved spend vain sorrow upon the graves of William and\nJustine, the first hapless victims to my unhallowed arts."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "I wished\nto see him again, that I might wreak the utmost extent of abhorrence on his\nhead and avenge the deaths of William and Justine."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "William and Justine were\nassassinated, and the murderer escapes; he walks about the world free,\nand perhaps respected."
+  },
+  {
+    "entity1": "Mont Blanc",
+    "entity2": "Mont Blanc",
+    "relationship": "interacted",
+    "context": "Mont Blanc, the supreme and\nmagnificent Mont Blanc, raised itself from the surrounding _aiguilles_,\nand its tremendous _dôme_ overlooked the valley."
+  },
+  {
+    "entity1": "Montanvert",
+    "entity2": "Mont Blanc",
+    "relationship": "interacted",
+    "context": "From the side where I\nnow stood Montanvert was exactly opposite, at the distance of a league;\nand above it rose Mont Blanc, in awful majesty."
+  },
+  {
+    "entity1": "Agatha",
+    "entity2": "Felix",
+    "relationship": "interacted",
+    "context": "Agatha,_ and the youth _Felix, brother,_ or _son_."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Agatha",
+    "relationship": "interacted",
+    "context": "“My thoughts now became more active, and I longed to discover the\nmotives and feelings of these lovely creatures; I was inquisitive to\nknow why Felix appeared so miserable and Agatha so sad."
+  },
+  {
+    "entity1": "Agatha",
+    "entity2": "Felix",
+    "relationship": "interacted",
+    "context": "Agatha asked a question, to which the stranger only replied by\npronouncing, in a sweet accent, the name of Felix."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "When they\nseparated Felix kissed the hand of the stranger and said, ‘Good night\nsweet Safie.’"
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Agatha",
+    "relationship": "interacted",
+    "context": "“The next morning Felix went out to his work, and after the usual\noccupations of Agatha were finished, the Arabian sat at the feet of the\nold man, and taking his guitar, played some airs so entrancingly\nbeautiful that they at once drew tears of sorrow and delight from my\neyes."
+  },
+  {
+    "entity1": "Agatha",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "The old\nman appeared enraptured and said some words which Agatha endeavoured to\nexplain to Safie, and by which he appeared to wish to express that she\nbestowed on him the greatest delight by her music."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "“The book from which Felix instructed Safie was Volney’s _Ruins\nof Empires_."
+  },
+  {
+    "entity1": "Safie",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "“Safie related that her mother was a Christian Arab, seized and made a\nslave by the Turks; recommended by her beauty, she had won the heart of\nthe father of Safie, who married her."
+  },
+  {
+    "entity1": "Safie",
+    "entity2": "Turk",
+    "relationship": "interacted",
+    "context": "“Safie resolved to remain with her father until the moment of his\ndeparture, before which time the Turk renewed his promise that she\nshould be united to his deliverer; and Felix remained with them in\nexpectation of that event; and in the meantime he enjoyed the society\nof the Arabian, who exhibited towards him the simplest and tenderest\naffection."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "De Lacey",
+    "relationship": "interacted",
+    "context": "The\nplot of Felix was quickly discovered, and De Lacey and Agatha were\nthrown into prison."
+  },
+  {
+    "entity1": "Turk",
+    "entity2": "Felix",
+    "relationship": "interacted",
+    "context": "He quickly arranged\nwith the Turk that if the latter should find a favourable opportunity\nfor escape before Felix could return to Italy, Safie should remain as a\nboarder at a convent at Leghorn; and then, quitting the lovely Arabian,\nhe hastened to Paris and delivered himself up to the vengeance of the\nlaw, hoping to free De Lacey and Agatha by this proceeding."
+  },
+  {
+    "entity1": "Turk",
+    "entity2": "deliverer",
+    "relationship": "interacted",
+    "context": "Felix soon learned that the treacherous Turk, for\nwhom he and his family endured such unheard-of oppression, on\ndiscovering that his deliverer was thus reduced to poverty and ruin,\nbecame a traitor to good feeling and honour and had quitted Italy with\nhis daughter, insultingly sending Felix a pittance of money to aid him,\nas he said, in some plan of future maintenance."
+  },
+  {
+    "entity1": "Turk",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "He could\nhave endured poverty, and while this distress had been the meed of his\nvirtue, he gloried in it; but the ingratitude of the Turk and the loss\nof his beloved Safie were misfortunes more bitter and irreparable."
+  },
+  {
+    "entity1": "Turk",
+    "entity2": "Leghorn",
+    "relationship": "interacted",
+    "context": "“A few days after, the Turk entered his daughter’s apartment and told\nher hastily that he had reason to believe that his residence at Leghorn\nhad been divulged and that he should speedily be delivered up to the\nFrench government; he had consequently hired a vessel to convey him to\nConstantinople, for which city he should sail in a few hours."
+  },
+  {
+    "entity1": "Numa",
+    "entity2": "Solon",
+    "relationship": "interacted",
+    "context": "Induced by these\nfeelings, I was of course led to admire peaceable lawgivers, Numa,\nSolon, and Lycurgus, in preference to Romulus and Theseus."
+  },
+  {
+    "entity1": "Adam",
+    "entity2": "Creator",
+    "relationship": "interacted",
+    "context": "I remembered Adam’s\nsupplication to his Creator."
+  },
+  {
+    "entity1": "Safie",
+    "entity2": "Felix",
+    "relationship": "interacted",
+    "context": "“One day, when the sun shone on the red leaves that strewed the ground\nand diffused cheerfulness, although it denied warmth, Safie, Agatha,\nand Felix departed on a long country walk, and the old man, at his own\ndesire, was left alone in the cottage."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "‘Who are you?’\n\n“At that instant the cottage door was opened, and Felix, Safie, and\nAgatha entered."
+  },
+  {
+    "entity1": "Agatha",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "Agatha fainted, and Safie, unable to attend to her\nfriend, rushed out of the cottage."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "Among the lessons that Felix had\nbestowed upon Safie, geography had not been omitted; I had learned from\nthese the relative situations of the different countries of the earth."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "Without\npreviously communicating with me, he had, in concert with Elizabeth,\narranged that Clerval should join me at Strasburgh."
+  },
+  {
+    "entity1": "Strasburgh",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "After some days spent in listless indolence, during which I traversed\nmany leagues, I arrived at Strasburgh, where I waited two days for\nClerval."
+  },
+  {
+    "entity1": "Rhine",
+    "entity2": "Strasburgh",
+    "relationship": "interacted",
+    "context": "We had agreed to descend the Rhine in a boat from Strasburgh to\nRotterdam, whence we might take shipping for London."
+  },
+  {
+    "entity1": "Strasburgh",
+    "entity2": "Mainz",
+    "relationship": "interacted",
+    "context": "We stayed a day at Mannheim, and on the fifth from our departure from\nStrasburgh, arrived at Mainz."
+  },
+  {
+    "entity1": "Rhine",
+    "entity2": "Mainz",
+    "relationship": "interacted",
+    "context": "The course of the Rhine below Mainz\nbecomes much more picturesque."
+  },
+  {
+    "entity1": "Uri",
+    "entity2": "the Pays de Vaud",
+    "relationship": "interacted",
+    "context": "“I have seen,” he said, “the most beautiful scenes\nof my own country; I have visited the lakes of Lucerne and Uri, where the\nsnowy mountains descend almost perpendicularly to the water, casting black\nand impenetrable shades, which would cause a gloomy and mournful appearance\nwere it not for the most verdant islands that relieve the eye by their gay\nappearance; I have seen this lake agitated by a tempest, when the wind tore\nup whirlwinds of water and gave you an idea of what the water-spout must be\non the great ocean; and the waves dash with fury the base of the mountain,\nwhere the priest and his mistress were overwhelmed by an avalanche and\nwhere their dying voices are still said to be heard amid the pauses of the\nnightly wind; I have seen the mountains of La Valais, and the Pays de Vaud;\nbut this country, Victor, pleases me more than all those wonders."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "I saw an insurmountable barrier placed between me and my\nfellow men; this barrier was sealed with the blood of William and\nJustine, and to reflect on the events connected with those names filled\nmy soul with anguish."
+  },
+  {
+    "entity1": "Oxford",
+    "entity2": "Matlock",
+    "relationship": "interacted",
+    "context": "In this expedition we did not\nintend to follow the great road to Edinburgh, but to visit Windsor, Oxford,\nMatlock, and the Cumberland lakes, resolving to arrive at the completion of\nthis tour about the end of July."
+  },
+  {
+    "entity1": "Falkland",
+    "entity2": "Goring",
+    "relationship": "interacted",
+    "context": "The memory of that unfortunate king and his\ncompanions, the amiable Falkland, the insolent Goring, his queen, and\nson, gave a peculiar interest to every part of the city which they\nmight be supposed to have inhabited."
+  },
+  {
+    "entity1": "Derby",
+    "entity2": "Westmorland",
+    "relationship": "interacted",
+    "context": "From Derby, still journeying northwards, we passed two months in\nCumberland and Westmorland."
+  },
+  {
+    "entity1": "Cumberland",
+    "entity2": "Westmorland",
+    "relationship": "interacted",
+    "context": "We had scarcely visited the various lakes of Cumberland and Westmorland\nand conceived an affection for some of the inhabitants when the period\nof our appointment with our Scotch friend approached, and we left them\nto travel on."
+  },
+  {
+    "entity1": "Coupar",
+    "entity2": "Tay",
+    "relationship": "interacted",
+    "context": "We left Edinburgh in a week, passing through Coupar, St. Andrew’s, and\nalong the banks of the Tay, to Perth, where our friend expected us."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "I thought of Elizabeth, of my father, and\nof Clerval—all left behind, on whom the monster might satisfy his\nsanguinary and merciless passions."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "I lay for two months on the point of death; my\nravings, as I afterwards heard, were frightful; I called myself the\nmurderer of William, of Justine, and of Clerval."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Ernest",
+    "relationship": "interacted",
+    "context": "I stretched out my hand to him and cried,\n\n“Are you then safe—and Elizabeth—and Ernest?”"
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Ernest",
+    "relationship": "interacted",
+    "context": "He talked\nof Geneva, which I should soon visit, of Elizabeth and Ernest; but\nthese words only drew deep groans from me."
+  },
+  {
+    "entity1": "Justine",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "Justine, poor unhappy Justine, was as innocent\nas I, and she suffered the same charge; she died for it; and I am the cause\nof this—I murdered her."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "William, Justine, and Henry—they all\ndied by my hands.”"
+  },
+  {
+    "entity1": "Sweet",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "Sweet and beloved Elizabeth!"
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Evian",
+    "relationship": "interacted",
+    "context": "After the ceremony was performed a large party assembled at my\nfather’s, but it was agreed that Elizabeth and I should commence our\njourney by water, sleeping that night at Evian and continuing our\nvoyage on the following day."
+  },
+  {
+    "entity1": "Mont Blanc",
+    "entity2": "Jura",
+    "relationship": "interacted",
+    "context": "We passed rapidly along; the sun was hot, but we\nwere sheltered from its rays by a kind of canopy while we enjoyed the\nbeauty of the scene, sometimes on one side of the lake, where we saw\nMont Salêve, the pleasant banks of Montalègre, and at a distance,\nsurmounting all, the beautiful Mont Blanc, and the assemblage of snowy\nmountains that in vain endeavour to emulate her; sometimes coasting the\nopposite banks, we saw the mighty Jura opposing its dark side to the\nambition that would quit its native country, and an almost\ninsurmountable barrier to the invader who should wish to enslave it."
+  },
+  {
+    "entity1": "Victor",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "“Be happy, my dear Victor,” replied Elizabeth; “there is, I hope,\nnothing to distress you; and be assured that if a lively joy is not\npainted in my face, my heart is contented."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Victor",
+    "relationship": "interacted",
+    "context": "Elizabeth observed my agitation for some time in timid and fearful silence,\nbut there was something in my glance which communicated terror to her, and\ntrembling, she asked, “What is it that agitates you, my dear Victor?\nWhat is it you fear?”\n\n“Oh!"
+  },
+  {
+    "entity1": "William",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "The death\nof William, the execution of Justine, the murder of Clerval, and lastly\nof my wife; even at that moment I knew not that my only remaining\nfriends were safe from the malignity of the fiend; my father even now\nmight be writhing under his grasp, and Ernest might be dead at his\nfeet."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "As night approached I found myself at the\nentrance of the cemetery where William, Elizabeth, and my father\nreposed."
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "During the day I was\nsustained and inspirited by the hope of night, for in sleep I saw my\nfriends, my wife, and my beloved country; again I saw the benevolent\ncountenance of my father, heard the silver tones of my Elizabeth’s\nvoice, and beheld Clerval enjoying health and youth."
+  },
+  {
+    "entity1": "William",
+    "entity2": "Justine",
+    "relationship": "interacted",
+    "context": "Hear him not; call on the names of William,\nJustine, Clerval, Elizabeth, my father, and of the wretched Victor, and\nthrust your sword into his heart."
+  },
+  {
+    "entity1": "Felix",
+    "entity2": "Safie",
+    "relationship": "interacted",
+    "context": "His tale is connected and told with an appearance of the simplest truth,\nyet I own to you that the letters of Felix and Safie, which he showed me,\nand the apparition of the monster seen from our ship, brought to me a\ngreater conviction of the truth of his narrative than his asseverations,\nhowever earnest and connected."
+  },
+  {
+    "entity1": "Clerval",
+    "entity2": "Elizabeth",
+    "relationship": "interacted",
+    "context": "Can any\nman be to me as Clerval was, or any woman another Elizabeth?"
+  },
+  {
+    "entity1": "Elizabeth",
+    "entity2": "Clerval",
+    "relationship": "interacted",
+    "context": "But I enjoyed friends, dear not only\nthrough habit and association, but from their own merits; and wherever\nI am, the soothing voice of my Elizabeth and the conversation of\nClerval will be ever whispered in my ear."
+  },
+  {
+    "entity1": "Project\nGutenberg",
+    "entity2": "Project Gutenberg",
+    "relationship": "interacted",
+    "context": "There are a lot of things you can do with Project\nGutenberg™ electronic works if you follow the terms of this\nagreement and help preserve free future access to Project Gutenberg™\nelectronic works."
+  },
+  {
+    "entity1": "The Project Gutenberg Literary Archive Foundation",
+    "entity2": "Project Gutenberg",
+    "relationship": "interacted",
+    "context": "The Project Gutenberg Literary Archive Foundation (“the\nFoundation” or PGLAF), owns a compilation copyright in the collection\nof Project Gutenberg™ electronic works."
+  },
+  {
+    "entity1": "Project Gutenberg",
+    "entity2": "License",
+    "relationship": "interacted",
+    "context": "You can easily\ncomply with the terms of this agreement by keeping this work in the\nsame format with its attached full Project Gutenberg™ License when\nyou share it without charge with others."
+  },
+  {
+    "entity1": "Gutenberg",
+    "entity2": "License",
+    "relationship": "interacted",
+    "context": "The following sentence, with active links to, or other\nimmediate access to, the full Project Gutenberg™ License must appear\nprominently whenever any copy of a Project Gutenberg™ work (any work\non which the phrase “Project Gutenberg” appears, or with which the\nphrase “Project Gutenberg” is associated) is accessed, displayed,\nperformed, viewed, copied or distributed:\n\n    This eBook is for the use of anyone anywhere in the United States and most\n    other parts of the world at no cost and with almost no restrictions\n    whatsoever."
+  },
+  {
+    "entity1": "the Project Gutenberg",
+    "entity2": "License",
+    "relationship": "interacted",
+    "context": "Additional terms\nwill be linked to the Project Gutenberg™ License for all works\nposted with the permission of the copyright holder found at the\nbeginning of this work."
+  },
+  {
+    "entity1": "Gutenberg",
+    "entity2": "Project Gutenberg",
+    "relationship": "interacted",
+    "context": "Do not unlink or detach or remove the full Project Gutenberg™\nLicense terms from this work, or any files containing a part of this\nwork or any other work associated with Project Gutenberg™."
+  },
+  {
+    "entity1": "Gutenberg",
+    "entity2": "License",
+    "relationship": "interacted",
+    "context": "Any alternate format must include the\nfull Project Gutenberg™ License as specified in paragraph 1.E.1.\n\n1.E.7."
+  },
+  {
+    "entity1": "Project",
+    "entity2": "Gutenberg Literary Archive Foundation",
+    "relationship": "interacted",
+    "context": "The fee is owed\n        to the owner of the Project Gutenberg™ trademark, but he has\n        agreed to donate royalties under this paragraph to the Project\n        Gutenberg Literary Archive Foundation."
+  },
+  {
+    "entity1": "Project",
+    "entity2": "Gutenberg Literary Archive Foundation",
+    "relationship": "interacted",
+    "context": "Royalty\n        payments should be clearly marked as such and sent to the Project\n        Gutenberg Literary Archive Foundation at the address specified in\n        Section 4, “Information about donations to the Project Gutenberg\n        Literary Archive Foundation.”"
+  },
+  {
+    "entity1": "Gutenberg",
+    "entity2": "License",
+    "relationship": "interacted",
+    "context": "You provide a full refund of any money paid by a user who notifies\n        you in writing (or by e-mail) within 30 days of receipt that s/he\n        does not agree to the terms of the full Project Gutenberg™\n        License."
+  },
+  {
+    "entity1": "Gutenberg Literary Archive Foundation",
+    "entity2": "the Project\nGutenberg",
+    "relationship": "interacted",
+    "context": "Except for the “Right\nof Replacement or Refund” described in paragraph 1.F.3, the Project\nGutenberg Literary Archive Foundation, the owner of the Project\nGutenberg™ trademark, and any other party distributing a Project\nGutenberg™ electronic work under this agreement, disclaim all\nliability to you for damages, costs and expenses, including legal\nfees."
+  },
+  {
+    "entity1": "LIABILITY",
+    "entity2": "BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT",
+    "relationship": "interacted",
+    "context": "YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT\nLIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE\nPROVIDED IN PARAGRAPH 1.F.3."
+  },
+  {
+    "entity1": "DIRECT",
+    "entity2": "PUNITIVE",
+    "relationship": "interacted",
+    "context": "YOU AGREE THAT THE FOUNDATION, THE\nTRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE\nLIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR\nINCIDENTAL DAMAGES"
+  },
+  {
+    "entity1": "Foundation",
+    "entity2": "Foundation",
+    "relationship": "interacted",
+    "context": "INDEMNITY - You agree to indemnify and hold the Foundation, the\ntrademark owner, any agent or employee of the Foundation, anyone\nproviding copies of Project Gutenberg™ electronic works in\naccordance with this agreement, and any volunteers associated with the\nproduction, promotion and distribution of Project Gutenberg™\nelectronic works, harmless from all liability, costs and expenses,\nincluding legal fees, that arise directly or indirectly from any of\nthe following which you do or cause to occur: (a) distribution of this\nor any Project Gutenberg™ work, (b) alteration, modification, or\nadditions or deletions to any Project Gutenberg™ work, and (c) any\nDefect you cause."
+  },
+  {
+    "entity1": "the Project\nGutenberg Literary Archive Foundation",
+    "entity2": "Project Gutenberg",
+    "relationship": "interacted",
+    "context": "In 2001, the Project\nGutenberg Literary Archive Foundation was created to provide a secure\nand permanent future for Project Gutenberg™ and future\ngenerations."
+  },
+  {
+    "entity1": "Archive Foundation",
+    "entity2": "Foundation",
+    "relationship": "interacted",
+    "context": "To learn more about the Project Gutenberg Literary\nArchive Foundation and how your efforts and donations can help, see\nSections 3 and 4 and the Foundation information page at www.gutenberg.org."
+  },
+  {
+    "entity1": "the Project Gutenberg Literary Archive Foundation",
+    "entity2": "Literary Archive Foundation",
+    "relationship": "interacted",
+    "context": "Information about the Project Gutenberg Literary Archive Foundation\n\nThe Project Gutenberg Literary Archive Foundation is a non-profit\n501(c)(3) educational corporation organized under the laws of the\nstate of Mississippi and granted tax exempt status by the Internal\nRevenue Service."
+  },
+  {
+    "entity1": "General Information",
+    "entity2": "Michael S. Hart",
+    "relationship": "interacted",
+    "context": "General Information About Project Gutenberg™ electronic works\n\nProfessor Michael S. Hart was the originator of the Project\nGutenberg™ concept of a library of electronic works that could be\nfreely shared with anyone."
+  },
+  {
+    "entity1": "Project Gutenberg",
+    "entity2": "eBooks",
+    "relationship": "interacted",
+    "context": "For forty years, he produced and\ndistributed Project Gutenberg™ eBooks with only a loose network of\nvolunteer support."
+  },
+  {
+    "entity1": "Gutenberg",
+    "entity2": "eBooks",
+    "relationship": "interacted",
+    "context": "Project Gutenberg™ eBooks are often created from several printed\neditions, all of which are confirmed as not protected by copyright in\nthe U.S. unless a copyright notice is included."
+  },
+  {
+    "entity1": "Project Gutenberg",
+    "entity2": "Archive Foundation",
+    "relationship": "interacted",
+    "context": "This website includes information about Project Gutenberg™,\nincluding how to make donations to the Project Gutenberg Literary\nArchive Foundation, how to help produce our new eBooks, and how to\nsubscribe to our email newsletter to hear about new eBooks."
+  }
+]

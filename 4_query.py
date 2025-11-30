@@ -131,48 +131,48 @@ def build_hybrid_index():
         return index, chunks
 
 
-# def build_vectorizers(rels, dlg):
-#     # Build text corpora
-#     rel_texts = []
-#     rel_meta = []
-#     for r in rels:
-#         text = " ".join([str(r.get("entity1", "")), str(r.get("entity2", "")), str(r.get("relationship", "")), str(r.get("context", ""))])
-#         rel_texts.append(text)
-#         rel_meta.append(r)
+def build_vectorizers(rels, dlg):
+    # Build text corpora
+    rel_texts = []
+    rel_meta = []
+    for r in rels:
+        text = " ".join([str(r.get("entity1", "")), str(r.get("entity2", "")), str(r.get("relationship", "")), str(r.get("context", ""))])
+        rel_texts.append(text)
+        rel_meta.append(r)
 
-#     dlg_texts = []
-#     dlg_meta = []
-#     for d in dlg:
-#         txt = d.get("dialogue") or d.get("context") or ""
-#         speaker = d.get("speaker")
-#         dlg_texts.append(txt)
-#         dlg_meta.append(d)
+    dlg_texts = []
+    dlg_meta = []
+    for d in dlg:
+        txt = d.get("dialogue") or d.get("context") or ""
+        speaker = d.get("speaker")
+        dlg_texts.append(txt)
+        dlg_meta.append(d)
 
-#     all_texts = rel_texts + dlg_texts
-#     vectorizer = TfidfVectorizer()
-#     if not all_texts:
-#         # create empty matrices for consistent return shape
-#         X = vectorizer.fit_transform([""])
-#         rel_X = X[:0]
-#         dlg_X = X[0:]
-#         return vectorizer, (rel_X, dlg_X), rel_texts, dlg_texts, rel_meta, dlg_meta
+    all_texts = rel_texts + dlg_texts
+    vectorizer = TfidfVectorizer()
+    if not all_texts:
+        # create empty matrices for consistent return shape
+        X = vectorizer.fit_transform([""])
+        rel_X = X[:0]
+        dlg_X = X[0:]
+        return vectorizer, (rel_X, dlg_X), rel_texts, dlg_texts, rel_meta, dlg_meta
 
-#     vectorizer = TfidfVectorizer().fit(all_texts)
-#     X = vectorizer.transform(all_texts)
+    vectorizer = TfidfVectorizer().fit(all_texts)
+    X = vectorizer.transform(all_texts)
 
-#     rel_X = X[: len(rel_texts)] if rel_texts else X[:0]
-#     dlg_X = X[len(rel_texts) :] if dlg_texts else X[0:]
+    rel_X = X[: len(rel_texts)] if rel_texts else X[:0]
+    dlg_X = X[len(rel_texts) :] if dlg_texts else X[0:]
 
-#     return vectorizer, (rel_X, dlg_X), rel_texts, dlg_texts, rel_meta, dlg_meta
+    return vectorizer, (rel_X, dlg_X), rel_texts, dlg_texts, rel_meta, dlg_meta
 
 # # set k = 5
-# def topk_sim(query, vectorizer, X, k=5):
-#     if X is None or X.shape[0] == 0:
-#         return []
-#     qv = vectorizer.transform([query])
-#     sims = (X @ qv.T).toarray().ravel()
-#     idx = np.argsort(-sims)[:k]
-#     return list(zip(idx.tolist(), sims[idx].tolist()))
+def topk_sim(query, vectorizer, X, k=5):
+    if X is None or X.shape[0] == 0:
+        return []
+    qv = vectorizer.transform([query])
+    sims = (X @ qv.T).toarray().ravel()
+    idx = np.argsort(-sims)[:k]
+    return list(zip(idx.tolist(), sims[idx].tolist()))
 def hybrid_retrieve(query, persona, index, chunks, k=8, graph=None):
     if graph is None:
         graph = json.load(open(os.path.join(WORKING_DIR, "entity_graph.json")))
@@ -233,35 +233,35 @@ def interactive(k=5, inference_mode=False):
             print("Goodbye")
             break
 
-        # # Identify entity mentions in question: try to match nodes
-        # mentioned = []
-        # for n in nodes:
-        #     if n.lower() in q.lower() or similar(n, q) > 0.8:
-        #         mentioned.append(n)
+        # Identify entity mentions in question: try to match nodes
+        mentioned = []
+        for n in nodes:
+            if n.lower() in q.lower() or similar(n, q) > 0.8:
+                mentioned.append(n)
 
-        # if not mentioned:
-        #     # default to chosen persona
-        #     mentioned = [persona]
+        if not mentioned:
+            # default to chosen persona
+            mentioned = [persona]
 
-        # print(f"Identified entities (for query): {mentioned}")
+        print(f"Identified entities (for query): {mentioned}")
 
-        # retrieve top K from relationships and dialogues
-        # rel_results = []
-        # dlg_results = []
-        # if rel_X is not None:
-        #     rel_results = topk_sim(q, vectorizer, rel_X, k=k)
-        # if dlg_X is not None:
-        #     dlg_results = topk_sim(q, vectorizer, dlg_X, k=k)
+        #retrieve top K from relationships and dialogues
+        rel_results = []
+        dlg_results = []
+        if rel_X is not None:
+            rel_results = topk_sim(q, vectorizer, rel_X, k=k)
+        if dlg_X is not None:
+            dlg_results = topk_sim(q, vectorizer, dlg_X, k=k)
 
-        # print(f"Top {k} related relationship contexts:")
-        # for idx, score in rel_results:
-        #     meta = rel_meta[idx]
-        #     print(f"- [{score:.3f}] {meta.get('entity1')} - {meta.get('relationship')} - {meta.get('entity2')}: {meta.get('context')}")
+        print(f"Top {k} related relationship contexts:")
+        for idx, score in rel_results:
+            meta = rel_meta[idx]
+            print(f"- [{score:.3f}] {meta.get('entity1')} - {meta.get('relationship')} - {meta.get('entity2')}: {meta.get('context')}")
 
-        # print(f"\nTop {k} related dialogue snippets:")
-        # for idx, score in dlg_results:
-        #     meta = dlg_meta[idx]
-        #     print(f"- [{score:.3f}] {meta.get('speaker')}: {meta.get('dialogue') or meta.get('context')}")
+        print(f"\nTop {k} related dialogue snippets:")
+        for idx, score in dlg_results:
+            meta = dlg_meta[idx]
+            print(f"- [{score:.3f}] {meta.get('speaker')}: {meta.get('dialogue') or meta.get('context')}")
 
         # Inside loop, replace everything after input q:
         results = hybrid_retrieve(q, persona, index, chunks, k=6, graph=graph)

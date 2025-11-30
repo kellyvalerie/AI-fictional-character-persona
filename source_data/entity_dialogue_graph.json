@@ -1,0 +1,285 @@
+{
+  "nodes": [
+    {
+      "id": "Clerval",
+      "members": [
+        "Clerval"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Ernest",
+      "members": [
+        "Ernest"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Elizabeth",
+      "members": [
+        "Elizabeth"
+      ],
+      "aliases": [],
+      "count": 4
+    },
+    {
+      "id": "De",
+      "members": [
+        "De"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Felix",
+      "members": [
+        "Felix"
+      ],
+      "aliases": [],
+      "count": 1
+    },
+    {
+      "id": "Mr",
+      "members": [
+        "Mr"
+      ],
+      "aliases": [],
+      "count": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "Clerval",
+      "target": "Clerval",
+      "count": 1,
+      "dialogs": [
+        "Could he allude to an object on\nwhom I dared not even think?\n\n“Compose yourself,” said Clerval, who observed my change of\ncolour, “I will not mention it if it agitates you; but your father\nand cousin would be very happy if they received a letter from you in your\nown handwriting."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Clerval",
+      "target": "Ernest",
+      "count": 2,
+      "dialogs": [
+        "Could he allude to an object on\nwhom I dared not even think?\n\n“Compose yourself,” said Clerval, who observed my change of\ncolour, “I will not mention it if it agitates you; but your father\nand cousin would be very happy if they received a letter from you in your\nown handwriting."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Clerval",
+      "target": "Elizabeth",
+      "count": 1,
+      "dialogs": [
+        "Could he allude to an object on\nwhom I dared not even think?\n\n“Compose yourself,” said Clerval, who observed my change of\ncolour, “I will not mention it if it agitates you; but your father\nand cousin would be very happy if they received a letter from you in your\nown handwriting."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Clerval",
+      "target": "De",
+      "count": 1,
+      "dialogs": [
+        "Could he allude to an object on\nwhom I dared not even think?\n\n“Compose yourself,” said Clerval, who observed my change of\ncolour, “I will not mention it if it agitates you; but your father\nand cousin would be very happy if they received a letter from you in your\nown handwriting."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Clerval",
+      "target": "Felix",
+      "count": 1,
+      "dialogs": [
+        "Could he allude to an object on\nwhom I dared not even think?\n\n“Compose yourself,” said Clerval, who observed my change of\ncolour, “I will not mention it if it agitates you; but your father\nand cousin would be very happy if they received a letter from you in your\nown handwriting."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Clerval",
+      "target": "Mr",
+      "count": 1,
+      "dialogs": [
+        "Could he allude to an object on\nwhom I dared not even think?\n\n“Compose yourself,” said Clerval, who observed my change of\ncolour, “I will not mention it if it agitates you; but your father\nand cousin would be very happy if they received a letter from you in your\nown handwriting."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Ernest",
+      "target": "Ernest",
+      "count": 1,
+      "dialogs": [
+        "“She most of all,” said Ernest, “requires consolation; she accused\nherself of having caused the death of my brother, and that made her\nvery wretched."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Elizabeth",
+      "target": "Ernest",
+      "count": 2,
+      "dialogs": [
+        "“She most of all,” said Ernest, “requires consolation; she accused\nherself of having caused the death of my brother, and that made her\nvery wretched."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "De",
+      "target": "Ernest",
+      "count": 1,
+      "dialogs": [
+        "“She most of all,” said Ernest, “requires consolation; she accused\nherself of having caused the death of my brother, and that made her\nvery wretched."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Ernest",
+      "target": "Felix",
+      "count": 1,
+      "dialogs": [
+        "“She most of all,” said Ernest, “requires consolation; she accused\nherself of having caused the death of my brother, and that made her\nvery wretched."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Ernest",
+      "target": "Mr",
+      "count": 1,
+      "dialogs": [
+        "“She most of all,” said Ernest, “requires consolation; she accused\nherself of having caused the death of my brother, and that made her\nvery wretched."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Elizabeth",
+      "target": "Elizabeth",
+      "count": 3,
+      "dialogs": [
+        "“Yes,” said Elizabeth,\n“I will go, although she is guilty; and you, Victor, shall accompany\nme; I cannot go alone.”"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "De",
+      "target": "Elizabeth",
+      "count": 2,
+      "dialogs": [
+        "“Yes,” said Elizabeth,\n“I will go, although she is guilty; and you, Victor, shall accompany\nme; I cannot go alone.”"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Elizabeth",
+      "target": "Felix",
+      "count": 1,
+      "dialogs": [
+        "“Yes,” said Elizabeth,\n“I will go, although she is guilty; and you, Victor, shall accompany\nme; I cannot go alone.”"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Elizabeth",
+      "target": "Mr",
+      "count": 2,
+      "dialogs": [
+        "“Yes,” said Elizabeth,\n“I will go, although she is guilty; and you, Victor, shall accompany\nme; I cannot go alone.”"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "De",
+      "target": "De",
+      "count": 1,
+      "dialogs": [
+        "“‘Enter,’ said De Lacey, ‘and I will try in what\nmanner I can to relieve your wants; but, unfortunately, my children are\nfrom home, and as I am blind, I am afraid I shall find it difficult to\nprocure food for you.’"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "De",
+      "target": "Felix",
+      "count": 2,
+      "dialogs": [
+        "“‘Enter,’ said De Lacey, ‘and I will try in what\nmanner I can to relieve your wants; but, unfortunately, my children are\nfrom home, and as I am blind, I am afraid I shall find it difficult to\nprocure food for you.’"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "De",
+      "target": "Mr",
+      "count": 1,
+      "dialogs": [
+        "“‘Enter,’ said De Lacey, ‘and I will try in what\nmanner I can to relieve your wants; but, unfortunately, my children are\nfrom home, and as I am blind, I am afraid I shall find it difficult to\nprocure food for you.’"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Felix",
+      "target": "Felix",
+      "count": 1,
+      "dialogs": [
+        "“‘It is utterly useless,’ replied Felix; ‘we can\nnever again inhabit your cottage."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Felix",
+      "target": "Mr",
+      "count": 2,
+      "dialogs": [
+        "“‘It is utterly useless,’ replied Felix; ‘we can\nnever again inhabit your cottage."
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    },
+    {
+      "source": "Mr",
+      "target": "Mr",
+      "count": 1,
+      "dialogs": [
+        "“This suspense is a thousand times worse than the most horrible event;\ntell me what new scene of death has been acted, and whose murder I am\nnow to lament?”\n\n“Your family is perfectly well,” said Mr. Kirwin with\ngentleness; “and someone, a friend, is come to visit you.”"
+      ],
+      "contexts": [
+        "conversation"
+      ]
+    }
+  ]
+}
