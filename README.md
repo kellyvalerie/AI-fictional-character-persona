@@ -1,4 +1,7 @@
 # AI Fictional Character Persona
+goal: learn how to use RAG (Retrieval Augmented Generation) with some Data Analyst skill
+
+How?
 Input your favorite fictional character, and chat with them like friends!
 
 1_preprocessData.py
